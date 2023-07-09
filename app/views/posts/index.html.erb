@@ -4,11 +4,16 @@
 
 <% @posts.each do |post| %>
 <div class="post">
-  <div class="post-date">
-    <%= post.created_at.to_s(:datetime_jp)  %>
+  <div class="checkbox-info">
+    <input type="checkbox" class="checkbox">
   </div>
-  <div class="post-memo">
-    <%= post.memo %>
+  <div class="post-info">
+    <div class="post-date">
+      <%= post.created_at.to_s(:datetime_jp)  %>
+    </div>
+    <div class="post-memo">
+      <%= post.memo %>
+    </div>
   </div>
 </div>
 <% end %>

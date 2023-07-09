@@ -4,8 +4,19 @@
 
 .post{
   border: 1px solid;
-  width: 40%;
+  width: 35%;
   margin-top: 30px;
+  display: flex;
+}
+
+.checkbox-info {
+  width: 10%;
+  display: flex;
+  justify-content: center;
+}
+
+.post-info {
+  width: 90%;
 }
 
 .post-date{
