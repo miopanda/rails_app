@@ -3,9 +3,10 @@
 <%= link_to '新規投稿', '/posts/new' %>
 
 <% @posts.each do |post| %>
-<div class="post">
+<label class="post">
   <div class="checkbox-info">
     <input type="checkbox" class="checkbox">
+    <span></span>
   </div>
   <div class="post-info">
     <div class="post-date">
@@ -15,6 +16,6 @@
       <%= post.memo %>
     </div>
   </div>
-</div>
+</label>
 <% end %>
 
