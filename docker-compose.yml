@@ -23,3 +23,11 @@ services:
       - ./my.cnf:/etc/mysql/conf.d/my.cnf
     cap_add:
       - SYS_NICE
+
+  webpacker:
+    build: .
+    command: bundle exec bin/webpack-dev-server
+    volumes:
+      - .:/myapp
+    ports:
+      - "3035:3035"
